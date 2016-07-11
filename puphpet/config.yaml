@@ -23,7 +23,7 @@ vagrantfile:
                         id: wpdev
                         hostname: wpdev.local
                         network:
-                            private_network: 10.0.2.10
+                            private_network: 192.168.55.22
                             forwarded_port:
                                 vflmnfp_idkb1vmcxz0n:
                                     host: '6677'

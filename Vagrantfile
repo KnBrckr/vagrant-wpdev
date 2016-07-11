@@ -31,10 +31,10 @@ Vagrant.configure('2') do |config|
   config.hostmanager.manage_guest = true
   config.hostmanager.ignore_private_ip = false
   config.hostmanager.include_offline = true
-  # config.vm.define 'example-box' do |node|
-  #   node.vm.hostname = 'example-box-hostname'
-  #   node.vm.network :private_network, ip: '192.168.42.42'
-  #   node.hostmanager.aliases = %w(example-box.localdomain example-box-alias)
-  # end
+  config.vm.define 'wpdev' do |node|
+    node.vm.hostname = 'wpdev.local'
+    node.vm.network :private_network, ip: '192.168.55.22'
+    node.hostmanager.aliases = %w(wpdev www.wpdev.local)
+  end
   
 end
