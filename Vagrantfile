@@ -26,4 +26,15 @@ Vagrant.require_version '>= 1.8.1'
 
 Vagrant.configure('2') do |config|
   eval File.read("#{dir}/puphpet/vagrant/Vagrantfile-#{data['target']}")
+  config.hostmanager.enabled = true
+  config.hostmanager.manage_host = true
+  config.hostmanager.manage_guest = true
+  config.hostmanager.ignore_private_ip = false
+  config.hostmanager.include_offline = true
+  # config.vm.define 'example-box' do |node|
+  #   node.vm.hostname = 'example-box-hostname'
+  #   node.vm.network :private_network, ip: '192.168.42.42'
+  #   node.hostmanager.aliases = %w(example-box.localdomain example-box-alias)
+  # end
+  
 end
