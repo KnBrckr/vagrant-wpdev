@@ -41,7 +41,6 @@ vagrantfile:
             vflsf_fm23am30j9os:
                 source: /Users/ken/Sites/vm/wpdev
                 target: /var/www/wpdev
-                sync_type: nfs
                 smb:
                     smb_host: ''
                     smb_username: ''
@@ -197,7 +196,7 @@ apache:
             ssl_cipher: ''
             directories:
                 avd_8o8cggl7lnzb:
-                    path: /var/www/awesome
+                    path: /var/www/wpdev
                     options:
                         - Indexes
                         - FollowSymlinks
