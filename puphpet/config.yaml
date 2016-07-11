@@ -233,6 +233,7 @@ php:
             - mbstring
             - mysqlnd
             - tidy
+            - xml
         pear: {  }
         pecl: {  }
     ini:
