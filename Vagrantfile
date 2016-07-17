@@ -35,6 +35,6 @@ Vagrant.configure('2') do |config|
   #   node.vm.hostname = 'wpdev.local'
   #   node.vm.network :private_network, ip: '192.168.55.22'
   #   node.hostmanager.aliases = %w(wpdev www.wpdev.local)
-  end
+  # end
   
 end
