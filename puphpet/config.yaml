@@ -180,7 +180,7 @@ apache:
             servername: wpdev.local
             serveraliases:
                 - www.wpdev.local
-            docroot: /var/www/wpdev
+            docroot: /var/www/wpdev/public
             port: '80'
             setenv:
                 - 'APP_ENV dev'
@@ -196,7 +196,7 @@ apache:
             ssl_cipher: ''
             directories:
                 avd_8o8cggl7lnzb:
-                    path: /var/www/wpdev
+                    path: /var/www/wpdev/public
                     options:
                         - Indexes
                         - FollowSymlinks
